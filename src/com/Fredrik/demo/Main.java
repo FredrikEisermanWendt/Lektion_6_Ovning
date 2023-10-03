@@ -4,8 +4,20 @@ public class Main {
     public static void main(String[] args) {
         int[] intArr = {1, 2, 3, 4};
 
-        for (int i = 0; i < intArr.length +1; i++){
-            System.out.println(intArr[i]);
+        try {
+            for (int i = 0; i < intArr.length + 1; i++) {
+                System.out.println(intArr[i]);
+            }
+        }catch(Exception e){
+            System.out.println("Error, for loopen räddad!");
+        }
+
+        try {
+            if (intArr[intArr.length + 1] == 0){
+                System.out.println(true);
+            }
+        }catch(Exception e){
+            System.out.println("Där räddades if satsen");
         }
 
 
