@@ -9,7 +9,10 @@ public class Main {
 
     public static void tryMethod(){
         try{
-            System.out.println();
+            System.out.println(2/0);;
+        } catch (Exception e){
+            System.out.println("Error");
+
         }
 
 
